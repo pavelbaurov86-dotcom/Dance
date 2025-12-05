@@ -236,6 +236,11 @@
   }
 }
 
+
+@media(max-width:768px){
+  header .btn.nav-contact { display:none !important; }
+}
+
 </style>
 </head>
 <body>
@@ -252,7 +257,7 @@
 <a href="#apply">Заявка</a>
 </nav>
 <div class="pill">JazzFunk.Academy</div>
-<a class="btn" href="https://t.me/Y_KokSta" target="_blank" rel="noopener" style="font-size:13px;padding:8px 14px;white-space:nowrap;">Написать Вам</a>
+<a class="btn nav-contact" href="https://t.me/Y_KokSta" target="_blank" rel="noopener" style="font-size:13px;padding:8px 14px;white-space:nowrap;">Написать Вам</a>
 <button aria-expanded="false" aria-label="Меню" class="hamb" id="hamb" type="button">
 <svg aria-hidden="true" fill="none" height="22" viewbox="0 0 24 24" width="22">
 <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path>
@@ -743,5 +748,22 @@
     if (yrEl) { yrEl.textContent = new Date().getFullYear(); }
   })();
 </script>
+
+<style>
+@media(max-width:768px){
+  .mobile-float-btn{
+    position:fixed;
+    bottom:12px;
+    left:50%;
+    transform:translateX(-50%);
+    z-index:9999;
+  }
+}
+</style>
+<a class="btn btn-grad mobile-float-btn" 
+   href="https://t.me/Y_KokSta" 
+   target="_blank" 
+   rel="noopener">Написать Вам</a>
+
 </body>
 </html>
